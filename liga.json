@@ -1,0 +1,379 @@
+{
+  "leagueName": "2025 - Balonmano Mixto Cadete 2017",
+  "teams": [
+    {
+      "id": "833lylab",
+      "name": "Arene"
+    },
+    {
+      "id": "3e3w7dl4",
+      "name": "Betrokolo"
+    },
+    {
+      "id": "47kre4ld",
+      "name": "Kukullaga"
+    },
+    {
+      "id": "fssiw6kz",
+      "name": "Anaitasuna"
+    },
+    {
+      "id": "7uem26p0",
+      "name": "Zuazo"
+    },
+    {
+      "id": "wac2pxi6",
+      "name": "Coop Basauri"
+    },
+    {
+      "id": "c4pwhdu7",
+      "name": "Urdaneta"
+    },
+    {
+      "id": "y4kak27x",
+      "name": "Eskolabarri"
+    },
+    {
+      "id": "y5obxtgo",
+      "name": "Almike"
+    },
+    {
+      "id": "9vtjl699",
+      "name": "Tala"
+    },
+    {
+      "id": "9g44kkyx",
+      "name": "Muskiz ikastola"
+    },
+    {
+      "id": "3w7rew9n",
+      "name": "Muskiz San Juan"
+    }
+  ],
+  "matches": [
+    {
+      "id": "o1czao6k",
+      "homeId": "833lylab",
+      "awayId": "3e3w7dl4",
+      "homeGoals": 0,
+      "awayGoals": 4,
+      "date": "",
+      "round": "1",
+      "note": ""
+    },
+    {
+      "id": "5dewg2w4",
+      "homeId": "47kre4ld",
+      "awayId": "fssiw6kz",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "1",
+      "note": ""
+    },
+    {
+      "id": "gr80exty",
+      "homeId": "7uem26p0",
+      "awayId": "wac2pxi6",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "date": "",
+      "round": "1",
+      "note": ""
+    },
+    {
+      "id": "dlq605mc",
+      "homeId": "c4pwhdu7",
+      "awayId": "y4kak27x",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "date": "",
+      "round": "1",
+      "note": ""
+    },
+    {
+      "id": "kduihntd",
+      "homeId": "9vtjl699",
+      "awayId": "y5obxtgo",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "1",
+      "note": ""
+    },
+    {
+      "id": "wcsyv9xy",
+      "homeId": "fssiw6kz",
+      "awayId": "833lylab",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "date": "",
+      "round": "2",
+      "note": ""
+    },
+    {
+      "id": "e50xrzd9",
+      "homeId": "wac2pxi6",
+      "awayId": "47kre4ld",
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "date": "",
+      "round": "2",
+      "note": ""
+    },
+    {
+      "id": "i3irlnhr",
+      "homeId": "y4kak27x",
+      "awayId": "7uem26p0",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "date": "",
+      "round": "2",
+      "note": ""
+    },
+    {
+      "id": "igsttl1s",
+      "homeId": "3w7rew9n",
+      "awayId": "9vtjl699",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "date": "",
+      "round": "2",
+      "note": ""
+    },
+    {
+      "id": "a6u3w3ud",
+      "homeId": "y5obxtgo",
+      "awayId": "c4pwhdu7",
+      "homeGoals": 0,
+      "awayGoals": 4,
+      "date": "",
+      "round": "2",
+      "note": ""
+    },
+    {
+      "id": "2mv8woaz",
+      "homeId": "fssiw6kz",
+      "awayId": "wac2pxi6",
+      "homeGoals": null,
+      "awayGoals": null,
+      "date": "",
+      "round": "3",
+      "note": ""
+    },
+    {
+      "id": "5p2bq75k",
+      "homeId": "47kre4ld",
+      "awayId": "y4kak27x",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "3",
+      "note": ""
+    },
+    {
+      "id": "4wld39jq",
+      "homeId": "9vtjl699",
+      "awayId": "9g44kkyx",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "date": "",
+      "round": "3",
+      "note": ""
+    },
+    {
+      "id": "uychmwnx",
+      "homeId": "7uem26p0",
+      "awayId": "y5obxtgo",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "3",
+      "note": ""
+    },
+    {
+      "id": "0af10u04",
+      "homeId": "c4pwhdu7",
+      "awayId": "3w7rew9n",
+      "homeGoals": 0,
+      "awayGoals": 4,
+      "date": "",
+      "round": "3",
+      "note": ""
+    },
+    {
+      "id": "n4y1xh2m",
+      "homeId": "wac2pxi6",
+      "awayId": "833lylab",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "4",
+      "note": ""
+    },
+    {
+      "id": "uxunq37j",
+      "homeId": "y4kak27x",
+      "awayId": "fssiw6kz",
+      "homeGoals": 3,
+      "awayGoals": 0,
+      "date": "",
+      "round": "4",
+      "note": ""
+    },
+    {
+      "id": "673y2ecf",
+      "homeId": "3e3w7dl4",
+      "awayId": "9vtjl699",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "4",
+      "note": ""
+    },
+    {
+      "id": "6vdeio8f",
+      "homeId": "y5obxtgo",
+      "awayId": "47kre4ld",
+      "homeGoals": 0,
+      "awayGoals": 4,
+      "date": "",
+      "round": "4",
+      "note": ""
+    },
+    {
+      "id": "tdc258c1",
+      "homeId": "9g44kkyx",
+      "awayId": "c4pwhdu7",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "date": "",
+      "round": "4",
+      "note": ""
+    },
+    {
+      "id": "3x2g3nrw",
+      "homeId": "3w7rew9n",
+      "awayId": "7uem26p0",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "4",
+      "note": ""
+    },
+    {
+      "id": "7f5pvpta",
+      "homeId": "wac2pxi6",
+      "awayId": "y4kak27x",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "date": "",
+      "round": "5",
+      "note": ""
+    },
+    {
+      "id": "5ohx7sdp",
+      "homeId": "c4pwhdu7",
+      "awayId": "3e3w7dl4",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "date": "",
+      "round": "5",
+      "note": ""
+    },
+    {
+      "id": "mhi7q96k",
+      "homeId": "47kre4ld",
+      "awayId": "3w7rew9n",
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "date": "",
+      "round": "5",
+      "note": ""
+    },
+    {
+      "id": "088g8osk",
+      "homeId": "7uem26p0",
+      "awayId": "9g44kkyx",
+      "homeGoals": 3,
+      "awayGoals": 1,
+      "date": "",
+      "round": "5",
+      "note": ""
+    },
+    {
+      "id": "4t5vjceb",
+      "homeId": "fssiw6kz",
+      "awayId": "y5obxtgo",
+      "homeGoals": null,
+      "awayGoals": null,
+      "date": "",
+      "round": "5",
+      "note": ""
+    },
+    {
+      "id": "f7k02b34",
+      "homeId": "y4kak27x",
+      "awayId": "833lylab",
+      "homeGoals": 2,
+      "awayGoals": 1,
+      "date": "",
+      "round": "6",
+      "note": ""
+    },
+    {
+      "id": "0i5uu8ri",
+      "homeId": "y5obxtgo",
+      "awayId": "wac2pxi6",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "date": "",
+      "round": "6",
+      "note": ""
+    },
+    {
+      "id": "0d0z0ha8",
+      "homeId": "3w7rew9n",
+      "awayId": "fssiw6kz",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "6",
+      "note": ""
+    },
+    {
+      "id": "gcmksv68",
+      "homeId": "3e3w7dl4",
+      "awayId": "7uem26p0",
+      "homeGoals": 4,
+      "awayGoals": 0,
+      "date": "",
+      "round": "6",
+      "note": ""
+    },
+    {
+      "id": "jx13ow4t",
+      "homeId": "9g44kkyx",
+      "awayId": "47kre4ld",
+      "homeGoals": 0,
+      "awayGoals": 4,
+      "date": "",
+      "round": "6",
+      "note": ""
+    },
+    {
+      "id": "zf1ytiun",
+      "homeId": "833lylab",
+      "awayId": "9vtjl699",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "date": "",
+      "round": "7",
+      "note": ""
+    }
+  ],
+  "pointsWin": 2,
+  "pointsDraw": 1,
+  "pointsLoss": 0,
+  "editingMatchId": null
+}
