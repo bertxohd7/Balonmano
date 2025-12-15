@@ -370,6 +370,46 @@
       "date": "",
       "round": "7",
       "note": ""
+    },
+    {
+      "id": "x8pt3fgb",
+      "homeId": "y4kak27x",
+      "awayId": "y5obxtgo",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "date": "",
+      "round": "7",
+      "note": ""
+    },
+    {
+      "id": "9l9k09sz",
+      "homeId": "wac2pxi6",
+      "awayId": "3w7rew9n",
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "date": "",
+      "round": "7",
+      "note": ""
+    },
+    {
+      "id": "70elbnub",
+      "homeId": "fssiw6kz",
+      "awayId": "9g44kkyx",
+      "homeGoals": 2,
+      "awayGoals": 2,
+      "date": "",
+      "round": "7",
+      "note": ""
+    },
+    {
+      "id": "kdd1fre1",
+      "homeId": "47kre4ld",
+      "awayId": "3e3w7dl4",
+      "homeGoals": 1,
+      "awayGoals": 3,
+      "date": "",
+      "round": "",
+      "note": ""
     }
   ],
   "pointsWin": 2,
