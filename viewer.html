@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -6,83 +7,27 @@
 <title>Liga de balonmano - Solo lectura</title>
 
 <style>
-  :root{
-    --bg:#f7f7f8;
-    --fg:#111;
-    --muted:#666;
-    --card:#fff;
-    --border:#e6e6e6;
-  }
-
+  :root{--bg:#f7f7f8;--fg:#111;--muted:#666;--card:#fff;--border:#e6e6e6}
   *{box-sizing:border-box}
   html,body{height:100%}
-
-  body{
-    margin:0;
-    background:var(--bg);
-    color:var(--fg);
-    font:16px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial;
-  }
-
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial}
   .container{max-width:1100px;margin:0 auto;padding:16px}
   h1{margin-top:0;font-size:clamp(22px,3.5vw,30px)}
-
-  .card{
-    background:var(--card);
-    border:1px solid var(--border);
-    border-radius:16px;
-    padding:16px;
-    box-shadow:0 1px 2px rgba(0,0,0,.04);
-    margin-bottom:16px;
-  }
-
+  .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:0 1px 2px rgba(0,0,0,.04);margin-bottom:16px}
   table{border-collapse:collapse;width:100%}
   th,td{border-bottom:1px solid var(--border);text-align:left;padding:6px 8px}
   thead th{background:#f0f0f2;font-weight:600}
-
   .muted{color:var(--muted);font-size:14px}
+  .badge{display:inline-block;padding:2px 6px;border-radius:999px;font-size:11px;border:1px solid var(--border);margin-left:6px}
+  .flex{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+  select{border:1px solid var(--border);border-radius:10px;padding:6px 8px;background:#fff;color:var(--fg)}
 
-  .badge{
-    display:inline-block;
-    padding:2px 6px;
-    border-radius:999px;
-    font-size:11px;
-    border:1px solid var(--border);
-    margin-left:6px;
-  }
+  #seasonEnd{display:none;text-align:center;font-size:18px;margin-bottom:10px;font-weight:bold;color:#0a7}
 
-  .flex{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    align-items:center;
-    justify-content:space-between;
-  }
-
-  select{
-    border:1px solid var(--border);
-    border-radius:10px;
-    padding:6px 8px;
-    background:#fff;
-    color:var(--fg);
-  }
-
-  /* Temporada finalizada */
-  #seasonEnd{
-    display:none;
-    text-align:center;
-    font-size:18px;
-    margin-bottom:10px;
-    font-weight:bold;
-    color:#0a7;
-  }
-
-  /* Podio clasificación */
   .gold{background:#fff4c2}
   .silver{background:#eeeeee}
   .bronze{background:#f3d2b3}
 
-  /* Resultados del equipo seleccionado */
   .result-win{background:#d8f5dc}
   .result-draw{background:#fff3bf}
   .result-loss{background:#ffd6e0}
@@ -105,7 +50,6 @@
         <label class="muted" for="teamFilter">
           <b>Filtrar partidos por equipo</b>
         </label><br>
-
         <select id="teamFilter">
           <option value="">Todos los equipos</option>
         </select>
@@ -115,54 +59,33 @@
 
   <section class="card">
     <h2 style="margin-top:0">Clasificación</h2>
-
     <div style="overflow:auto">
       <table id="tableStandings">
         <thead>
           <tr>
-            <th>Pos</th>
-            <th>Equipo</th>
-            <th>PJ</th>
-            <th>G</th>
-            <th>E</th>
-            <th>P</th>
-            <th>GF</th>
-            <th>GC</th>
-            <th>DG</th>
-            <th>Pts</th>
+            <th>Pos</th><th>Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th>
+            <th>GF</th><th>GC</th><th>DG</th><th>Pts</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
     </div>
-
-    <p class="muted" id="noStandingsMsg" style="display:none">
-      No hay datos de clasificación.
-    </p>
+    <p class="muted" id="noStandingsMsg" style="display:none">No hay datos de clasificación.</p>
   </section>
 
   <section class="card">
     <h2 style="margin-top:0">Partidos</h2>
-
     <div style="overflow:auto">
       <table id="tableMatches">
         <thead>
           <tr>
-            <th>Fecha</th>
-            <th>Jornada</th>
-            <th>Local</th>
-            <th>Resultado</th>
-            <th>Visitante</th>
-            <th>Notas</th>
+            <th>Fecha</th><th>Jornada</th><th>Local</th><th>Resultado</th><th>Visitante</th><th>Notas</th>
           </tr>
         </thead>
         <tbody></tbody>
       </table>
     </div>
-
-    <p class="muted" id="noMatchesMsg" style="display:none">
-      No hay partidos registrados.
-    </p>
+    <p class="muted" id="noMatchesMsg" style="display:none">No hay partidos registrados.</p>
   </section>
 
   <footer class="muted">
@@ -177,6 +100,12 @@
 
   const $ = s => document.querySelector(s);
   let data = null;
+
+  function getSortedTeams(){
+    return (data?.teams || [])
+      .slice()
+      .sort((a,b)=>a.name.localeCompare(b.name,"es",{sensitivity:"base"}));
+  }
 
   async function loadData(){
     try{
@@ -193,7 +122,6 @@
 
     }catch(err){
       console.error(err);
-
       $("#leagueTitle").textContent = "No se pudo cargar la liga";
       $("#pointsInfo").textContent = "Revisa que el archivo liga.json esté junto a este viewer.html.";
       $("#noStandingsMsg").style.display = "";
@@ -216,14 +144,7 @@
       map.set(t.id,{
         teamId:t.id,
         team:t.name,
-        PJ:0,
-        G:0,
-        E:0,
-        P:0,
-        GF:0,
-        GC:0,
-        DG:0,
-        Pts:0
+        PJ:0,G:0,E:0,P:0,GF:0,GC:0,DG:0,Pts:0
       });
     });
 
@@ -247,18 +168,15 @@
       A.DG = A.GF - A.GC;
 
       if(m.homeGoals > m.awayGoals){
-        H.G++;
-        A.P++;
+        H.G++; A.P++;
         H.Pts += ptsW;
         A.Pts += ptsL;
       }else if(m.homeGoals < m.awayGoals){
-        A.G++;
-        H.P++;
+        A.G++; H.P++;
         A.Pts += ptsW;
         H.Pts += ptsL;
       }else{
-        H.E++;
-        A.E++;
+        H.E++; A.E++;
         H.Pts += ptsD;
         A.Pts += ptsD;
       }
@@ -268,7 +186,7 @@
       if(b.Pts !== a.Pts) return b.Pts - a.Pts;
       if(b.DG !== a.DG) return b.DG - a.DG;
       if(b.GF !== a.GF) return b.GF - a.GF;
-      return a.team.localeCompare(b.team,"es");
+      return a.team.localeCompare(b.team,"es",{sensitivity:"base"});
     });
 
     return arr.map((r,i)=>Object.assign({Pos:i+1},r));
@@ -323,16 +241,13 @@
 
   function renderTeamFilter(){
     const sel = $("#teamFilter");
-
     if(!data || !sel) return;
 
-    const teams = data.teams || [];
+    const teams = getSortedTeams();
 
     sel.innerHTML =
       '<option value="">Todos los equipos</option>' +
       teams
-        .slice()
-        .sort((a,b)=>a.name.localeCompare(b.name,"es"))
         .map(t=>`<option value="${t.id}">${t.name.replace(/</g,'&lt;')}</option>`)
         .join("");
   }
@@ -386,13 +301,6 @@
 
       const tr = document.createElement("tr");
 
-      /*
-        Si hay un equipo seleccionado, coloreamos la fila según
-        el resultado de ESE equipo:
-        - victoria: verde
-        - empate: amarillo
-        - derrota: rosa
-      */
       if(teamId && m.homeGoals != null && m.awayGoals != null){
         const selectedIsHome = m.homeId === teamId;
         const selectedGoals = selectedIsHome ? m.homeGoals : m.awayGoals;
@@ -445,19 +353,8 @@
     const end = Date.now() + duration;
 
     (function frame(){
-      confetti({
-        particleCount:3,
-        angle:60,
-        spread:55,
-        origin:{x:0}
-      });
-
-      confetti({
-        particleCount:3,
-        angle:120,
-        spread:55,
-        origin:{x:1}
-      });
+      confetti({particleCount:3,angle:60,spread:55,origin:{x:0}});
+      confetti({particleCount:3,angle:120,spread:55,origin:{x:1}});
 
       if(Date.now() < end){
         requestAnimationFrame(frame);
