@@ -1075,5 +1075,7 @@
   "pointsWin": 2,
   "pointsDraw": 1,
   "pointsLoss": 0,
+  "seasonFinished": true,
+  "highlightPodium": true
   "editingMatchId": null
 }
